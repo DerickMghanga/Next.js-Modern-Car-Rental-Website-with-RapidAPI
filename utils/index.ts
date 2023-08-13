@@ -61,11 +61,9 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
     return `${url}`;
 }
 
-
 // we call this function in the CustomFilter.tsx component
 //  to generate a more specific pathname with manufacturer, model, fuel and year car details
 export const updateSearchParams = (type: string, value: string) => {
-
     const searchParams = new URLSearchParams(window.location.search);
     // this get the current path name with the manufacturer and model details
     // Check and confirm from SearchBar.tsx Component
